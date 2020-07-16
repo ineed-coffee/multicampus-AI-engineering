@@ -47,3 +47,9 @@ def Append(list_type):
 
 def Add(value_type):
     value_type+=1         # value    
+
+
+import calc_module as cm
+
+Ans = cm.Add(1,2)
+print(Ans)
