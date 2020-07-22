@@ -18,7 +18,7 @@ class Login():
         
     def check_log(self):
         check_id = self.id_e.get()
-        if check_id == 1:
+        if check_id == '1':
             messagebox.showinfo('Log status','Successfully logged in')
         else:
             messagebox.showerror('Log status','Log in failed, check your ID or PW')
