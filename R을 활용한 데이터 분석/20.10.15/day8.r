@@ -37,3 +37,15 @@ table(creditTest$default)
 install.packages('C50')
 library(C50)
 
+str(credit)
+
+creditTrain$default <- factor(creditTrain$default)
+str(creditTrain)
+
+model <- C5.0(creditTrain[-17],creditTrain$default,trials = 50)
+model
+
+library(gmodels)
+creditPred <- predict(model,creditTest[-17])
+CrossTable(creditTest$default,creditPred,
+           dnn=c('actual','predicted'))
