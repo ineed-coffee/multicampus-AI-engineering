@@ -35,4 +35,10 @@ berryRules <- subset(groceryRules,items %in% 'berries')
 
 write(berryRules,file='berryRules.csv',sep=',',row.names=F)
 
-as
+install.packages('arules')
+install.packages('C50')
+install.packages('tm')
+install.packages('SnoballC')
+install.packages('wordcloud')
+install.packages('RColorBrewer')
+install.packages('e1071')
